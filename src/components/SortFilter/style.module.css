@@ -1,0 +1,70 @@
+@import '../../index.css';
+
+.filter_container {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  margin: 64px 0 32px 0;
+}
+
+.filter_span {
+  margin-bottom: 8px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29em;
+  color: #8a8a89;
+}
+
+.select_filters {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  width: 226px;
+  height: 48px;
+  background: #54be96;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.select_filters select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: transparent;
+  border: none;
+  width: 200px;
+  color: aliceblue;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.select_filters select::-ms-expand {
+  display: none;
+}
+
+.select_filters::after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  pointer-events: none;
+}
+
+.select_filters select option {
+  background-color: #54be96;
+  color: aliceblue;
+  padding: 8px;
+}
+
+.select_filters select option:hover {
+  background-color: #3da883;
+}

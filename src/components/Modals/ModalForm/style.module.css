@@ -1,0 +1,90 @@
+@import '../../../index.css';
+
+/* Заголовок */
+h2 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: var(--font-inter-medium);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+/* Основний стиль для форми */
+form {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative; /* Для абсолютного позиціювання кнопки */
+}
+/* Стиль для параграфів у формі */
+
+.text_form {
+  font-family: var(--font-inter-regular);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-light-grey);
+  padding-bottom: 40px;
+  /* box-sizing: border-box; */
+  white-space: normal;
+  overflow: visible;
+}
+
+/* Стиль для інпутів */
+input {
+  box-sizing: border-box;
+  width: 100%; /* Розширюється на всю ширину батьківського контейнера */
+  height: auto;
+  padding: 16px 18px;
+  margin: 0;
+  border: 1px solid rgba(25, 26, 21, 0.1);
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+/* Стиль для блоку інпутів */
+.input_block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%; /* Розширюється на всю ширину батьківського контейнера */
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* Стиль для інпутів в .input_block */
+.input_block input {
+  width: 100%; /* Розширюється на всю ширину .input_block */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Стиль для кнопки */
+.button_sign_up,
+.button_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px; /* Внутрішні відступи */
+  gap: 8px;
+  width: 100%; /* Розширюється на всю ширину батьківського контейнера */
+  max-width: 438px; /* Максимальна ширина кнопки */
+  height: 52px;
+  background: #54be96;
+  border-radius: 30px;
+  position: relative; /* Зміна з absolute на relative для розташування всередині форми */
+}
+
+/* Стилі для помилок валідації */
+.validation_error {
+  padding: 0 0 0 10px;
+  margin: 0;
+  position: absolute;
+  font-family: var(--font-inter-regular);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: red;
+}

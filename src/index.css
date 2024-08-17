@@ -1,0 +1,88 @@
+@import 'modern-normalize/modern-normalize.css';
+/* index.css */
+
+:root {
+  --color-white: #fff;
+  --color-text: #191a15;
+  --color-bg-body: #f3f3f3;
+  --color-text-grey: #8a8a89;
+  --color-text-light-grey: rgba(25, 26, 21, 0.5);
+  --color-green: #54be96;
+  --color-green-hover: #36a379;
+  --color-text-green: #38cd3e;
+  --color-light-green-background: rgba(84, 190, 150, 0.2);
+  --color-icon-bg-text: #fbfbfb;
+  --color-icon-text: rgba(251, 251, 251, 0.5);
+  --color-icon-stroke: 1px solid rgba(25, 26, 21, 0.05);
+  --color-bg-btn-question: #4535af;
+  --color-bg-btn-users: #fbc75e;
+
+  /* fonts */
+  --font-inter-bold: 'Inter-Bold', sans-serif;
+  --font-inter-medium: 'Inter-Medium', sans-serif;
+  --font-inter-regular: 'Inter-Regular', sans-serif;
+  --font-inter-semibold: 'Inter-SemiBold', sans-serif;
+  --font-inter-semibold-italic: 'Inter-SemiBoldItalic', sans-serif;
+
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('./assets/fonts/Inter-SemiBold.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBoldItalic';
+  src: url('./assets/fonts/Inter-SemiBoldItalic.ttf') format('woff');
+}
+
+body {
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-weight: 400;
+  font-style: normal;
+
+  position: relative;
+  color: var(--color-text);
+  background: var(--color-bg-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  white-space: normal;
+  overflow: visible;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

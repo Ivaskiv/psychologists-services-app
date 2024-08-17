@@ -1,0 +1,136 @@
+@import '../../index.css';
+
+.psychologists_list_page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+.psychologists_list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+h2 {
+  font-family: var(--font-inter-medium);
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load_more_button {
+  background-color: #54be96;
+  color: var(--color-white);
+  padding: 12px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  /* padding: 14px 48px; */
+  width: 176px;
+  height: 48px;
+  border-radius: 30px;
+}
+
+.load_more_button:hover {
+  background: var(--color-green-hover);
+}
+
+.filter_list {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.filter_checkbox {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(84, 190, 150, 0.2);
+  border-radius: 6px;
+  width: 100%;
+  font-family: var(--font-inter-regular);
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.filter_checkbox:hover {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+
+.psychologist_card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.no_results {
+  font-family: var(--font-inter-regular);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-text);
+  padding: 20px 0;
+}
+
+@media (min-width: 320px) {
+  .psychologists_list_page {
+    padding: 0 16px;
+  }
+
+  .psychologists_list {
+    gap: 16px;
+  }
+
+  .load_more_button {
+    padding: 12px;
+  }
+
+  .psychologist_card_container {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .psychologists_list_page {
+    padding: 0 64px;
+  }
+
+  .psychologists_list {
+    gap: 24px;
+  }
+
+  .psychologist_card_container {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .psychologists_list_page {
+    padding: 0 128px;
+  }
+
+  .psychologists_list {
+    gap: 32px;
+  }
+
+  .psychologist_card_container {
+    gap: 32px;
+  }
+}

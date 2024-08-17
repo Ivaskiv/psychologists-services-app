@@ -1,0 +1,384 @@
+/* style.module.css */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container_form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fbfbfb;
+  padding: 24px;
+  border-radius: 8px;
+  z-index: 1001;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 360px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.form_title h3 {
+  font-family: var(--font-inter-medium);
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #191a15;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.form_title p {
+  font-family: var(--font-inter-regular);
+  font-size: 10px;
+  line-height: 1.25em;
+  color: rgba(25, 26, 21, 0.5);
+  text-align: justify-content;
+  padding-bottom: 20px;
+}
+
+.psychologist_modal_avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.avatar_img {
+  border-radius: 15px;
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+}
+
+.subtitle_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 10px;
+  color: #8a8a89;
+}
+
+.headerText {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  color: #191a15;
+}
+
+.fields_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.error_message {
+  color: red;
+  font-size: 10px;
+  margin-top: -12px;
+  padding-left: 8px;
+}
+
+.field,
+.textarea,
+.phone_input,
+.time_picker {
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid rgba(25, 26, 21, 0.1);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.phone_input,
+.date_picker_wrapper {
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid rgba(25, 26, 21, 0.1);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.phone_input input {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.container_phone_date {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.date_picker_wrapper {
+  position: relative;
+}
+
+.time_picker {
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.react-datepicker__triangle {
+  display: none;
+}
+
+.clock_icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  z-index: 1003;
+}
+
+.react-datepicker-wrapper input:focus,
+.react-datepicker-wrapper input:hover {
+  outline: none;
+  box-shadow: none;
+}
+
+.textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.closeButton {
+  font-size: 1.5rem;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.closeButton:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.closeButton:focus {
+  outline: none;
+}
+
+.btn_submit_container {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.btn_send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #fbfbfb;
+  height: 44px;
+  background: #54be96;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.btn_send:hover,
+.btn_send:active {
+  background: var(--color-green-hover);
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+select:focus,
+select:hover,
+button:focus,
+button:hover {
+  outline: none;
+  box-shadow: none;
+}
+
+.field:focus,
+.field:hover,
+.textarea:focus,
+.textarea:hover,
+.phone_input:focus,
+.phone_input:hover,
+.time_picker:focus,
+.time_picker:hover,
+.date_picker_wrapper input:focus,
+.date_picker_wrapper input:hover {
+  outline: none;
+  box-shadow: none;
+  border-color: rgba(25, 26, 21, 0.1);
+}
+
+.body_no_scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .fields_container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .container_phone_date {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .phone_input,
+  .date_picker_wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 52px;
+  }
+
+  .date_picker_wrapper {
+    margin-left: 8px;
+  }
+
+  .container_form {
+    padding: 32px;
+    border-radius: 12px;
+    max-width: 480px;
+  }
+
+  .form_title h3 {
+    font-size: 28px;
+  }
+
+  .form_title p {
+    font-size: 16px;
+  }
+
+  .avatar_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .headerText {
+    font-size: 16px;
+  }
+
+  .field,
+  .phone_input,
+  .textarea,
+  .time_picker {
+    height: 48px;
+  }
+
+  .time_picker {
+    width: 100%;
+    height: 48px;
+  }
+
+  .text_area {
+    height: 100px;
+  }
+
+  .clock_icon {
+    font-size: 22px;
+  }
+
+  .btn_send {
+    height: 48px;
+  }
+
+  .fields_container {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container_form {
+    padding: 40px;
+    max-width: 600px;
+
+    overflow: auto; /* або overflow-y: auto; */
+    scrollbar-width: none; /* Для Firefox */
+    -ms-overflow-style: none; /* Для IE та Edge */
+  }
+
+  .container_form::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari, Opera */
+  }
+
+  .form_title h3 {
+    font-size: 40px;
+  }
+
+  .form_title p {
+    font-size: 18px;
+  }
+
+  .avatar_img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .headerText {
+    font-size: 18px;
+  }
+
+  .field,
+  .textarea,
+  .container_phone_date {
+    height: 52px;
+  }
+
+  .text_area {
+    height: 120px;
+  }
+
+  .clock_icon {
+    font-size: 24px;
+  }
+
+  .btn_send {
+    height: 52px;
+  }
+}

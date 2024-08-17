@@ -1,0 +1,51 @@
+/* style css for Favorites.jsx */
+@import '../../index.css';
+
+.favorites_page {
+  padding: 0 8px;
+  /* max-width: 1184px; */
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.btn_favorite {
+  padding: 15px;
+  background: transparent;
+}
+
+.btn_favorite svg {
+  display: flex;
+
+  width: 26px;
+  height: 26px;
+  fill: #54be96;
+}
+.psychologists_list {
+  margin: 0;
+  width: 100%;
+  max-width: 1184px;
+  gap: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  /* max-width: 1184px; */
+}
+.filter {
+  align-content: start;
+}
+
+@media (min-width: 768px) {
+  .favorites_page {
+    padding: 0 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .favorites_page {
+    padding: 0 128px;
+  }
+}
