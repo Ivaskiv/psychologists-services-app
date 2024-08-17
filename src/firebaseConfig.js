@@ -8,7 +8,6 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 
-// Ваші Firebase конфігураційні дані
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
@@ -20,11 +19,9 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// Ініціалізуємо Firebase додаток
 const app = initializeApp(firebaseConfig);
 
-// Отримуємо екземпляри сервісів Firebase
 const auth = getAuth(app);
-const db = getDatabase(app); // Додаємо параметр app
+const db = getDatabase(app); 
 
 export { auth, db, createUserWithEmailAndPassword, signOut, onAuthStateChanged };
