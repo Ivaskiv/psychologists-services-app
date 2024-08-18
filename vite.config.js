@@ -1,17 +1,10 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-scw';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
   plugins: [react()],
   build: {
     sourcemap: true,
-    outDir: 'dist',
-  },
-  server: {
-    hmr: {
-      overlay: false,
-    },
   },
 });
