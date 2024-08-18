@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
 
-  build: {
-    sourcemap: true,
+ build: {
+    outDir: 'dist',
   },
   define: {
     'process.env': import.meta.env,
