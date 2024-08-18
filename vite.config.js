@@ -4,11 +4,12 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-
- build: {
-    outDir: 'dist',
+  build: {
+    sourcemap: true,
   },
-  define: {
-    'process.env': import.meta.env,
+  server: {
+    hmr: {
+      overlay: false,
+    },
   },
 });
