@@ -4,12 +4,12 @@ import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
-import { fetchAllPsychologists } from '../redux/psychologitsts/psychologistsOperation.js';
+import { fetchAllPsychologists } from '../../src/redux/psychologitsts/psychologistsOperation.js';
 
-const Home = lazy(() => import('../pages/home/Home.jsx'));
-const Header = lazy(() => import('../pages/header/Header.jsx'));
-const Psychologists = lazy(() => import('../pages/psychologists/Psychologists.jsx'));
-const Favorites = lazy(() => import('../pages/favorites/Favorites.jsx'));
+const Home = lazy(() => import('../../src/pages/home/Home.jsx'));
+const Header = lazy(() => import('../../src/pages/header/Header.jsx'));
+const Psychologists = lazy(() => import('../../src/pages/psychologists/Psychologists.jsx'));
+const Favorites = lazy(() => import('../../src/pages/favorites/Favorites.jsx'));
 
 const App = () => {
   const dispatch = useDispatch();

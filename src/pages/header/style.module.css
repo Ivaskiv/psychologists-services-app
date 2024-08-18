@@ -45,7 +45,7 @@
   gap: 10px;
   font-family: var(--font-inter-regular);
   font-weight: 400;
-  font-size: var(--font-size-medium) !important;
+  font-size: var(--font-size-medium);
   line-height: 20px;
   letter-spacing: -0.01em;
   color: var(--color-text);
@@ -188,7 +188,7 @@
     font-family: var(--font-inter-regular);
     font-size: var(--font-size-medium);
     font-weight: 500;
-    line-height: 20px !important;
+    line-height: 20px ;
     letter-spacing: -0.01em;
   }
 
