@@ -30,7 +30,6 @@ const Home = () => {
       <div className={css.img_title_container}>
         <div className={css.img_title}>
           <img className={css.img} src={titleImg} alt="Psychologists" />
-
           <div className={css.icon_container}>
             <div className={css.block_check}>
               <button className={css.btn_check}>
