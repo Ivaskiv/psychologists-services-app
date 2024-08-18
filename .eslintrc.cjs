@@ -12,7 +12,7 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh', 'eslint-plugin-node'],
   rules: {
-    'react/prop-types': 0,
+    'react/prop-types': 'off',
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
   },

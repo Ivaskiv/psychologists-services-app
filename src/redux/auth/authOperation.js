@@ -4,9 +4,7 @@ import {
   createUserWithEmailAndPassword,
   signOut,
   updateProfile,
-  signInWithCustomToken,
 } from 'firebase/auth';
-import axios from 'axios';
 import { auth } from '../../firebaseConfig';
 
 // дія для входу в систему

@@ -6,7 +6,6 @@ export const selectPsychologistsStatus = state => state.psychologists.status;
 export const selectFilter = state => state.psychologists.filter;
 export const selectSortType = state => state.psychologists.sortType;
 export const selectItemsPerPage = state => state.psychologists.itemsPerPage;
-// export const selectPage = state => state.psychologists.currentPage;
 export const selectHasMore = state => state.psychologists.hasMore;
 export const selectFavoriteIds = state => state.psychologists.favoriteIds;
 

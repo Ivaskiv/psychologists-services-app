@@ -5,7 +5,6 @@ import NoFavoritePsychologists from '../../components/NoFavoritePsychologists/No
 import PsychologistCard from '../../components/PsychologistsCard/PsychologistsCard';
 import SortFilter from '../../components/SortFilter/SortFilter';
 import {
-  selectFavoritePsychologists,
   selectFilter,
   selectSortType,
   selectFilteredAndSortedFavorites,
@@ -101,7 +100,7 @@ const Favorites = ({ userId }) => {
                 <PsychologistCard
                   key={psychologist.id}
                   psychologist={psychologist}
-                  isFavorite={true} // All displayed psychologists are favorites
+                  isFavorite={true}
                   onFavoriteToggle={() => handleFavoriteToggle(psychologist.id)}
                 />
               ))}

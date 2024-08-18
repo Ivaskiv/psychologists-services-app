@@ -1,11 +1,11 @@
 //psychologistsOperation.js;
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ref, get, remove } from 'firebase/database';
+import { ref, get, remove, set } from 'firebase/database';
 import { db } from '../../firebaseConfig';
 
 export const fetchAllPsychologists = createAsyncThunk(
   'psychologists/fetchAllPsychologists',
-  async (_, { dispatch }) => {
+  async () => {
     try {
       const snapshot = await get(ref(db, 'psychologists'));
       const data = snapshot.val() || [];
