@@ -319,6 +319,10 @@
     justify-content: center;
     align-items: center;
   }
+  .icon_arrow {
+    width: 30px;
+    height: 30px;
+  }
 
   .block_check {
     width: 311px;
