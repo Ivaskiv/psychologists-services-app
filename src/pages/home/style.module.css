@@ -323,12 +323,16 @@
   .block_check {
     width: 311px;
     height: 118px;
-    left: 10%;
-    top: 60%;
+    left: -85px;
+    top: 320px;
   }
   .btn_question {
     width: 40px;
     height: 40px;
+    top: 200px;
+    right: 255px;
+
+
   }
   .icon_question {
     font-size: 24px;
@@ -337,12 +341,13 @@
   .btn_users {
     width: 48px;
     height: 48px;
+    top: 60px;
+    right: -20px;
+
   }
   .img_title img {
-    width: 100%;
-    height: auto;
-    max-width: 464px;
-    max-height: 526px;
+    width: 464px;
+    height: 526px;
   }
 
   .icon_container {
