@@ -5,10 +5,9 @@
   "version": "2.0.0",
   "homepage": "https://Ivaskiv.github.io/psychologists-services-app",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "parcel build src/*.html --dist-dir dist --public-url /psychologists-services-app/",
+    "build": "vite build parcel build src/*.html --dist-dir dist --public-url /psychologists-services-app/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "parcel src/*.html"
